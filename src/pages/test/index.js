@@ -5,10 +5,10 @@ import { loadPartialConfig } from '@babel/core';
 
 // const Products = ({ dispatch, products }) => {
 class Products extends React.Component{
-    // constructor(props) {
-    //     super(props)
-    //   };
-   handleDelete(id){
+    constructor(props) {
+        super(props)
+      };
+   handleDelete=(id)=>{
   
       this.props.dispatch({
         type: 'products/delete',
