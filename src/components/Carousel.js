@@ -5,7 +5,8 @@ class Carousel extends React.Component{
         return(         
         <div className="block-slideshow__body">
   
-        <div className="owl-carousel"><a className="block-slideshow__slide" >
+        <div className="owl-carousel">
+        <a className="block-slideshow__slide" >
             <div className="block-slideshow__slide-image block-slideshow__slide-image--desktop" style={{backgroundImage: 'url("images/slides/slide-1-full.jpg")'}} />
             <div className="block-slideshow__slide-image block-slideshow__slide-image--mobile" style={{backgroundImage: 'url("images/slides/slide-1-mobile.jpg")'}} />
             <div className="block-slideshow__slide-content">
