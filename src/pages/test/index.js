@@ -9,15 +9,27 @@ class Products extends React.Component{
         super(props)
       };
    handleDelete=(id)=>{
+  console.log(window.g_app._store.getState());
   
       this.props.dispatch({
         type: 'products/delete',
         payload: id,
       });
     };
+    handleClick=()=>{
+        // console.log(window.g_app._store.getState());
+        
+            this.props.dispatch({
+              type: 'products/addproduct',
+              payload: {id:5,
+            name:"hhe"},
+            });
+            console.log(window.g_app._store.getState());
+          };
     render(){
         return (
-            <div>52
+            <div>
+            <button onClick={this.handleClick}></button>
               <h2>List of Products</h2>
               <ProductList onDelete={this.handleDelete} products={this.props.products} />
             </div>

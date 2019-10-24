@@ -52,19 +52,19 @@ export default class HeadTop extends React.Component{
                     {/* .menu */}
                     <ul className="menu menu--layout--topbar menu--with-icons">
                       <li><a href="#">
-                          <div className="menu__icon"><img srcSet="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt /></div>English
+                          <div className="menu__icon"><img srcSet="images/languages/language-1.png, images/languages/language-1@2x.png 2x" src="images/languages/language-1.png" alt="true" /></div>English
                         </a></li>
                       <li><a href="#">
-                          <div className="menu__icon"><img srcSet="images/languages/language-2.png, images/languages/language-2@2x.png 2x" src="images/languages/language-2.png" alt /></div>French
+                          <div className="menu__icon"><img srcSet="images/languages/language-2.png, images/languages/language-2@2x.png 2x" src="images/languages/language-2.png" alt="true"  /></div>French
                         </a></li>
                       <li><a href="#">
-                          <div className="menu__icon"><img srcSet="images/languages/language-3.png, images/languages/language-3@2x.png 2x" src="images/languages/language-3.png" alt /></div>German
+                          <div className="menu__icon"><img srcSet="images/languages/language-3.png, images/languages/language-3@2x.png 2x" src="images/languages/language-3.png" alt="true"  /></div>German
                         </a></li>
                       <li><a href="#">
-                          <div className="menu__icon"><img srcSet="images/languages/language-4.png, images/languages/language-4@2x.png 2x" src="images/languages/language-4.png" alt /></div>Russian
+                          <div className="menu__icon"><img srcSet="images/languages/language-4.png, images/languages/language-4@2x.png 2x" src="images/languages/language-4.png" alt="true"  /></div>Russian
                         </a></li>
                       <li><a href="#">
-                          <div className="menu__icon"><img srcSet="images/languages/language-5.png, images/languages/language-5@2x.png 2x" src="images/languages/language-5.png" alt /></div>Italian
+                          <div className="menu__icon"><img srcSet="images/languages/language-5.png, images/languages/language-5@2x.png 2x" src="images/languages/language-5.png" alt="true"  /></div>Italian
                         </a></li>
                     </ul>{/* .menu / end */}
                   </div>

@@ -2,8 +2,8 @@
 // ref: https://umijs.org/config/
 export default {
   history: 'hash', //采用hash路由：#/xxx的形式
-base:'/',
-publicPath:'/',
+base:'./',
+publicPath:'./',
   treeShaking: true,
   // routes: [
   //   {

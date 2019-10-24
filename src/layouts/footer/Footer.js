@@ -93,7 +93,7 @@ export default class Footer extends React.Component{
       </div>
       <div className="site-footer__bottom">
         <div className="site-footer__copyright"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></div>
-        <div className="site-footer__payments"><img src="images/payments.png" alt /></div>
+        <div className="site-footer__payments"><img src="images/payments.png" alt="true"/></div>
       </div>
     </div>
   </div>

@@ -11,7 +11,7 @@ class HeaderBottom extends React.Component{
     state={
         categories:[]
           }
-          componentDidMount(){
+    componentDidMount(){
             console.log(host);
             let d=[];
               const _this=this;
@@ -116,9 +116,9 @@ class HeaderBottom extends React.Component{
                   </svg></a></div>{/* .nav-links */}
               <div className="nav-panel__nav-links nav-links">
                 <ul className="nav-links__list">
-                <li className="nav-links__item"><a href="/#"><span>Home</span></a></li>
+                <li className="nav-links__item"><Link to="./"><span>Home</span></Link></li>
      
-                  <li className="nav-links__item nav-links__item--with-submenu"><a href="javascript:void(0);"><span>Category <svg className="nav-links__arrow" width="9px" height="6px">
+                  <li className="nav-links__item nav-links__item--with-submenu"><a ><span>Category <svg className="nav-links__arrow" width="9px" height="6px">
                           <use xlinkHref="images/sprite.svg#arrow-rounded-down-9x6">
                           </use>
                         </svg></span></a>
@@ -171,8 +171,14 @@ class HeaderBottom extends React.Component{
                       </ul>{/* .menu / end */}
                     </div>
                   </li>
-                  <li className="nav-links__item"><a href="contact-us.html"><span>Contact
-                        Us</span></a></li>
+                  <li className="nav-links__item">
+<Link to={{
+    pathname:"/test",
+    query:{
+        name:'name1',
+        id:'id123',
+    }
+}}> to query obj </Link></li>
                   <li className="nav-links__item"><Link to="/test"><span>Buy
                         Theme</span></Link></li>
                 </ul>
@@ -202,7 +208,7 @@ class HeaderBottom extends React.Component{
                     <div className="dropcart">
                       <div className="dropcart__products-list">
                         <div className="dropcart__product">
-                          <div className="dropcart__product-image"><a href="product.html"><img src="images/products/product-1.jpg" alt /></a>
+                          <div className="dropcart__product-image"><a href="product.html"><img src="images/products/product-1.jpg" alt="true" /></a>
                           </div>
                           <div className="dropcart__product-info">
                             <div className="dropcart__product-name"><a href="product.html">Electric Planer Brandix
@@ -217,7 +223,7 @@ class HeaderBottom extends React.Component{
                             </svg></button>
                         </div>
                         <div className="dropcart__product">
-                          <div className="dropcart__product-image"><a href="product.html"><img src="images/products/product-2.jpg" alt /></a>
+                          <div className="dropcart__product-image"><a href="product.html"><img src="images/products/product-2.jpg" alt="true" /></a>
                           </div>
                           <div className="dropcart__product-info">
                             <div className="dropcart__product-name"><a href="product.html">Undefined Tool IRadix DPS3000SY
@@ -228,7 +234,7 @@ class HeaderBottom extends React.Component{
                             </svg></button>
                         </div>
                         <div className="dropcart__product">
-                          <div className="dropcart__product-image"><a href="product.html"><img src="images/products/product-5.jpg" alt /></a>
+                          <div className="dropcart__product-image"><a href="product.html"><img src="images/products/product-5.jpg" alt="true" /></a>
                           </div>
                           <div className="dropcart__product-info">
                             <div className="dropcart__product-name"><a href="product.html">Brandix Router Power Tool
