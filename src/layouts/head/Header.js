@@ -3,9 +3,6 @@ import HeaderTopbar from "./HeaderTopbar";
 import HeaderSearch from "./HeaderSearch";
 import HeaderBottom from "./HeaderBottom";
 import { connect } from 'dva';
-import Config from '../../shopConfig.json';
-import apis from '../../services/api';
-import http from '../../services/http'
 import request from "../../services"
 
 class HeadTop extends React.Component{
@@ -26,24 +23,15 @@ componentDidMount() {
   }
 }
 hander=()=>{
-// getItemList;
-
 request.getFarro({params:
     {"startdatetime":"2019-10-24",
   "enddatetime":"2019-10-25"}
 }).then(res=>{
   console.log(res);
 })
-//   const aaa=http.get(apis.wucha,
-//    {params:{"startdatetime":"2019-10-24",
-//     "enddatetime":"2019-10-25"}
-// }).then(res=>{
-//     console.log(res)
-//   }).catch(function(error){
-//     console.log(error)//错误处理 相当于error
-//   })
 
-  console.log(apis);
+
+
 
   // console.log(window.g_app._store.getState())
 }
@@ -51,7 +39,7 @@ request.getFarro({params:
 
     render(){
         return   ( <div>
-{/* desktop site__header */}
+
 <header className="site__header d-lg-block d-none">
   <div className="site-header">
   {/* .topbar */}
@@ -60,11 +48,7 @@ request.getFarro({params:
  <HeaderSearch></HeaderSearch>   
  <HeaderBottom></HeaderBottom>
  </div>
- 
-</header>{/* desktop site__header / end */}
-
-
-  
+</header>
 </div>)
 
     }

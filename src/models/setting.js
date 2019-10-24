@@ -2,7 +2,7 @@ export default {
     namespace: 'setting',
     state:  
     {
-        
+  
         isloadingcategory:false,
         
 
@@ -13,8 +13,8 @@ export default {
         dispatch,
         history,
       }) {
-        console.log(history);
-      console.log(history.location.query);
+      //   console.log(history);
+      // console.log(history.location.query);
 
 
         return history.listen(async ({
