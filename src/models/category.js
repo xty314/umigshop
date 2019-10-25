@@ -1,3 +1,5 @@
+import request from '../services'
+import categroyFormat from '../utils/categoryformat'
 export default {
     namespace: 'category',
     state:  
@@ -7,14 +9,24 @@ export default {
         categoryqty:"",
 
     },
-    // effect:{
-    //   *query({payload},{call,put}){
-
-    //   }
-    // },
+    effects:{
+      *loadCategoryList({payload},{call,put}){
+        const res=yield call(request.getCategoryList)
+        // console.log(res);
+        
+        yield put({
+          type:'getCategory',
+          payload:res.data
+        })
+      }
+    },
     reducers: {
-      'delete'(state, { payload: id }) {
-        return state.filter(item => item.id !== id);
-      },
+
+      'getCategory'(state,{payload}){
+              return{...state,
+              list:  categroyFormat(payload)
+            }      
+        
+      }
     },
   };

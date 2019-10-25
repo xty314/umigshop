@@ -1,92 +1,15 @@
 import React from 'react';
 import HeaderBottomItem from "./HeaderBottomItem"
-import axios from "axios";
-import Link from "umi/link";
-import Config from '../../shopconfig.json';
 
-const host=Config.apiUrl+"api/category";
+import Link from "umi/link";
+import { connect } from 'dva';
+
+
 class HeaderBottom extends React.Component{
 
   
-    state={
-        categories:[]
-          }
+
     componentDidMount(){
-            console.log(host);
-            let d=[];
-              const _this=this;
-              axios.get(host)
-              .then(function (res) {
-             
-                let temp=[];
-                  for( var i in res.data){
-                    if(temp.indexOf(res.data[i].cat)===-1){
-                      temp.push(res.data[i].cat)
-                    }
-                  }
-                
-                  let temp2=[];
-                  for( var k in res.data){
-                    if(temp2.indexOf(res.data[k].cat+","+res.data[k].sCat)===-1){
-                      temp2.push(res.data[k].cat+","+res.data[k].sCat)
-                    }
-                  }
-          
-                    let result=[];
-                  for(var i in temp){
-                    let tempo={};
-                    tempo["name"]=temp[i];
-                    let templist=[];
-                    for(var j in temp2){
-                      let tempo2={};
-                      let a=temp2[j].split(',');
-            
-                      
-                      if(a[0]==temp[i]){
-                        tempo2["name"]=a[1];
-                        let templist2=[];
-                        for(var k in res.data){ 
-                       
-                                         
-                          if((res.data[k].cat+","+res.data[k].sCat)==temp2[j]){
-                        if(templist2.indexOf(res.data[k].ssCat)==-1){
-                          templist2.push(res.data[k].ssCat)
-                        }
-                            
-                           
-                          }
-                        }
-               
-                        
-                        tempo2["sub"]=templist2;
-                       
-                      }
-                     
-                      if(JSON.stringify(tempo2)!=="{}"){
-                        templist.push(tempo2)
-                      }
-                      
-                    }
-                    tempo["sub"]=templist;
-                    result.push(tempo)
-                  }
-        
-        
-        console.log(result);
-        
-                  return result         
-              })
-              .then(function (res) {
-                d=res;
-           
-              _this.setState(
-                { categories:d}
-               )
-            
-              })
-              .catch(function (error) {
-                  console.log(error);
-              })
           
           }
     render(){
@@ -125,7 +48,7 @@ class HeaderBottom extends React.Component{
                     <div className="nav-links__menu">
                       {/* .menu */}
                       <ul className="menu menu--layout--classic">
-                      {this.state.categories.map((category,i)=>{
+                      {this.props.category.list.map((category,i)=>{
                           return(<HeaderBottomItem name={category.name} sub={category.sub}></HeaderBottomItem>)
                       })}
                       
@@ -135,10 +58,13 @@ class HeaderBottom extends React.Component{
                       </ul>{/* .menu / end */}
                     </div>
                   </li>
-                  <li className="nav-links__item nav-links__item--with-submenu"><a href="blog-classic.html"><span>Blog <svg className="nav-links__arrow" width="9px" height="6px">
+                  <li className="nav-links__item nav-links__item--with-submenu">
+                  <a href="blog-classic.html"><span>Blog <svg className="nav-links__arrow" width="9px" height="6px">
                           <use xlinkHref="images/sprite.svg#arrow-rounded-down-9x6">
                           </use>
-                        </svg></span></a>
+                        </svg>
+                        </span>
+                        </a>
                     <div className="nav-links__menu">
                       {/* .menu */}
                       <ul className="menu menu--layout--classic">
@@ -152,10 +78,14 @@ class HeaderBottom extends React.Component{
                       </ul>{/* .menu / end */}
                     </div>
                   </li>
-                  <li className="nav-links__item nav-links__item--with-submenu"><a href="#"><span>Pages <svg className="nav-links__arrow" width="9px" height="6px">
+                  <li className="nav-links__item nav-links__item--with-submenu">
+                  <a href="#">
+                  <span>Pages <svg className="nav-links__arrow" width="9px" height="6px">
                           <use xlinkHref="images/sprite.svg#arrow-rounded-down-9x6">
                           </use>
-                        </svg></span></a>
+                        </svg>
+                        </span>
+                        </a>
                     <div className="nav-links__menu">
                       {/* .menu */}
                       <ul className="menu menu--layout--classic">
@@ -281,4 +211,7 @@ class HeaderBottom extends React.Component{
       )
     }
 }
-export default HeaderBottom;
+
+const mapStateToProps=({ item,setting,category}) => ({item,setting,category});
+// export default Products;
+export default connect(mapStateToProps)(HeaderBottom);

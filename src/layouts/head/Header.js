@@ -3,7 +3,8 @@ import HeaderTopbar from "./HeaderTopbar";
 import HeaderSearch from "./HeaderSearch";
 import HeaderBottom from "./HeaderBottom";
 import { connect } from 'dva';
-import request from "../../services"
+import request from "../../services";
+
 
 class HeadTop extends React.Component{
   // eslint-disable-next-line no-useless-constructor
@@ -11,25 +12,32 @@ class HeadTop extends React.Component{
     super(props)
   };
 componentDidMount() {
-
-  const {
-    setting
-  } = window.g_app._store.getState();
-  console.log(setting);
+  this.props.dispatch({
+    type:'category/loadCategoryList'
+  })
+  const {setting } =this.props;
+  console.log(this.props);
+  this.props.dispatch({
+    type: 'item/loadItemList',
+  });
   if (!setting.isloadingcategory) {
     this.props.dispatch({
       type: 'setting/loadedcategory',
     })
   }
 }
-hander=()=>{
-request.getFarro({params:
-    {"startdatetime":"2019-10-24",
-  "enddatetime":"2019-10-25"}
-}).then(res=>{
-  console.log(res);
-})
+handleClick=()=>{
 
+
+console.log(this.props);
+
+    };
+hander=()=>{
+
+this.props.dispatch({
+  type: 'item/test',
+  // payload: {branch:1},
+});
 
 
 
@@ -44,6 +52,7 @@ request.getFarro({params:
   <div className="site-header">
   {/* .topbar */}
  <HeaderTopbar></HeaderTopbar>
+  <button onClick={this.handleClick}>Get State</button>
   <button onClick={this.hander}>Get State</button>
  <HeaderSearch></HeaderSearch>   
  <HeaderBottom></HeaderBottom>
@@ -54,6 +63,6 @@ request.getFarro({params:
     }
 }
 
-const mapStateToProps=({ setting}) => ({setting});
+const mapStateToProps=({ item,setting,category}) => ({item,setting,category});
 // export default Products;
 export default connect(mapStateToProps)(HeadTop );

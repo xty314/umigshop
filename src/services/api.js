@@ -13,8 +13,7 @@ const getApiObj=config=>{
 
 
 export default (getApiObj)({
-        // getExampleData:'/api/example/data',
-        getItemList:'/api/item?branch=1',
-        farro:"http://farroapi.gpos.co.nz:800/api/branches",
-        wucha:"http://wuchaapi.gpos.co.nz/api/salesbranchreport/daterange"
+   
+        getItemList:'/api/item',
+        getCategoryList:'/api/category' // query(cat,scat,sscat)
     })
