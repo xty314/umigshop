@@ -1,59 +1,71 @@
 import React from "react";
-import ItemCard from '../../components/ItemCard'
+import ItemCard from '../../components/ItemCard';
+import Pagecontainer from '../../components/Pagecontainer'
 import { connect } from 'dva';
+// import ItemList from "../../../mock/items.json"
 import withRouter from 'umi/withRouter';
 
-let gcat='',gscat='';
 class Products extends React.Component{
-
-// shouldComponentUpdate(nextProps,nextState){
+//   componentWillReceiveProps(nextProps){
 //     let{cat,scat}=this.props.location.query;
-//     let nextcat=nextProps.location.query.cat;
-//     let nextscat=nextProps.location.query.cat;
-//  console.log(cat,nextcat);
-//  console.log(scat,nextscat);
+//     console.log(this.props.location)
  
-    
-    
-// if(cat!=nextcat||scat!=nextscat){
-//     this.forceUpdate()
-//     return true;
-// }else{
-//     return false;
+//     scat="undefined"?'':scat;
+// this.componentDidMount();
+//     // this.props.dispatch({
+//     //     type:"item/getItemList",
+//     //     payload:{
+//     //         cat:cat,
+//     //         scat:scat
+//     //     }
+//     // })
+  
 // }
+// componentDidUpdate(){
+//   let{cat,scat}=this.props.location.query;
+//      console.log(this.props.location)
+  
+//      scat="undefined"?'':scat;
 
-
+//     const a= ()=>this.props.dispatch({
+//          type:"item/getItemList",
+//          payload:{
+//              cat:cat,
+//              scat:scat
+//          }
+//      })
 
 // }
-    componentDidMount(prevProps){
-console.log(prevProps);
+  shouldComponentUpdate(nextProps, nextState) {
+    // console.log(nextProps.location.search);// 修改url进入的，这里能正确获取到新用户id
+    // console.log(this.props.location.search);
+    return true;
+  }
+
+    componentDidMount(){
 
      let{cat,scat}=this.props.location.query;
-     
+ 
   
      scat="undefined"?'':scat;
-     gcat=cat;
-     gscat=scat;
 
-console.log("d");
-
-     
-     this.props.dispatch({
-         type:"item/getItemList",
-         payload:{
-             cat:cat,
-             scat:scat
-         }
-     })
+  //  ()=>this.props.dispatch({
+  //        type:"item/getItemList",
+  //        payload:{
+  //            cat:cat,
+  //            scat:scat
+  //        }
+  //    })
   
-    }
+    };
 
 
 
 
 
     render(){
-        return(  <div className="site__body">
+        return(  
+        <div className="site__body" >
   <div className="page-header">
     <div className="page-header__container container">
       <div className="page-header__breadcrumb">
@@ -95,14 +107,15 @@ console.log("d");
                 </div>
                 <div className="view-options__legend">Showing 6 of 98 products</div>
                 <div className="view-options__divider" />
-                <div className="view-options__control"><label htmlFor>Sort By</label>
-                  <div><select className="form-control form-control-sm" name id>
+                <div className="view-options__control">
+                <Pagecontainer></Pagecontainer><label >Sort By</label>
+                  <div><select className="form-control form-control-sm">
                       <option value>Default</option>
                       <option value>Name (A-Z)</option>
                     </select></div>
                 </div>
-                <div className="view-options__control"><label htmlFor>Show</label>
-                  <div><select className="form-control form-control-sm" name id>
+                <div className="view-options__control"><label >Show</label>
+                  <div><select className="form-control form-control-sm">
                       <option value>12</option>
                       <option value>24</option>
                     </select></div>
@@ -111,15 +124,18 @@ console.log("d");
             </div>
             <div className="products-view__list products-list" data-layout="grid-4-full" data-with-features="false">
               <div className="products-list__body">
-              <ItemCard></ItemCard>
+           
                 {this.props.item.currentPageItemList.map((item,i)=>{
-                  return( <ItemCard name={item.name} price={item.price1}></ItemCard>) 
+                  return( <ItemCard name={item.description} price={item.price} key={this.props.location.search+i} code={item.code}></ItemCard>) 
                 })}
              </div>
             </div>
+            
             <div className="products-view__pagination">
+            <Pagecontainer></Pagecontainer>
               <ul className="pagination justify-content-center">
-                <li className="page-item disabled"><a className="page-link page-link--with-arrow" href="#" aria-label="Previous"><svg className="page-link__arrow page-link__arrow--left" aria-hidden="true" width="8px" height="13px">
+                <li className="page-item disabled">
+                <a className="page-link page-link--with-arrow" href="#" aria-label="Previous"><svg className="page-link__arrow page-link__arrow--left" aria-hidden="true" width="8px" height="13px">
                       <use xlinkHref="images/sprite.svg#arrow-rounded-left-8x13" />
                     </svg></a></li>
                 <li className="page-item"><a className="page-link" href="#">1</a></li>

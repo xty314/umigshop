@@ -14,6 +14,8 @@ const getApiObj=config=>{
 
 export default (getApiObj)({
    
-        getItemList:'/api/item',
-        getCategoryList:'/api/category' // query(cat,scat,sscat)
+    getItemList:'/api/item',
+    getCategoryList:'/api/categories' // query(cat,scat,sscat)
+      // getItemList:'/api/item',
+       // getCategoryList:'/api/category' // query(cat,scat,sscat)
     })

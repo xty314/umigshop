@@ -1,9 +1,15 @@
 import React from 'react';
+import Link from 'umi/link'
 
 
 
 class ItemCard extends React.Component{
+ 
     render(){
+      const style={
+       height:"90%",
+       paddingLeft:"50px"
+      }
         return(<div className="products-list__item">
         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
               <use xlinkHref="images/sprite.svg#quickview-16" />
@@ -11,10 +17,12 @@ class ItemCard extends React.Component{
           <div className="product-card__badges-list">
             <div className="product-card__badge product-card__badge--new">New</div>
           </div>
-          <div className="product-card__image"><a href="product.html">
-          <img src="images/products/product-1.jpg" alt /></a></div>
+          <div className="product-card__image">
+          
+         <Link to={'/item?code='+this.props.code} > <img src="images/product.png" alt="" style={style} /></Link>
+      </div>
           <div className="product-card__info">
-            <div className="product-card__name"><a href="product.html">{this.props.name}</a></div>
+            <div className="product-card__name"> <Link to={'/item?code='+this.props.code} >{this.props.name}</Link></div>
             <div className="product-card__rating">
               <div className="rating">
                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">

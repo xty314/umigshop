@@ -108,10 +108,10 @@ jkljfklasjfkljasdf
                           <div className="product-card__badges-list">
                             <div className="product-card__badge product-card__badge--new">New</div>
                           </div>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-1.jpg" alt="true" /></a></div>
+                          <div className="product-card__image"><img src="images/products/product-1.jpg" alt="true" /></div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Electric Planer
-                                Brandix KL370090G 300 Watts</a></div>
+                            <div className="product-card__name">Electric Planer
+                                Brandix KL370090G 300 Watts</div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -228,10 +228,10 @@ jkljfklasjfkljasdf
                           <div className="product-card__badges-list">
                             <div className="product-card__badge product-card__badge--hot">Hot</div>
                           </div>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-2.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-2.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Undefined Tool IRadix
-                                DPS3000SY 2700 Watts</a></div>
+                            <div className="product-card__name">   Undefined Tool IRadix
+                                DPS3000SY 2700 Watts   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -347,10 +347,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-3.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-3.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Drill Screwdriver
-                                Brandix ALX7054 200 Watts</a></div>
+                            <div className="product-card__name">   Drill Screwdriver
+                                Brandix ALX7054 200 Watts   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -467,10 +467,10 @@ jkljfklasjfkljasdf
                           <div className="product-card__badges-list">
                             <div className="product-card__badge product-card__badge--sale">Sale</div>
                           </div>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-4.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-4.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Drill Series 3
-                                Brandix KSR4590PQS 1500 Watts</a></div>
+                            <div className="product-card__name">   Drill Series 3
+                                Brandix KSR4590PQS 1500 Watts   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -586,10 +586,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-5.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-5.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Router Power
-                                Tool 2017ERXPK</a></div>
+                            <div className="product-card__name">   Brandix Router Power
+                                Tool 2017ERXPK   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -703,10 +703,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-6.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-6.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Drilling
-                                Machine DM2019KW4 4kW</a></div>
+                            <div className="product-card__name">   Brandix Drilling
+                                Machine DM2019KW4 4kW   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -822,9 +822,9 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-7.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-7.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Pliers</a>
+                            <div className="product-card__name">   Brandix Pliers   
                             </div>
                             <div className="product-card__rating">
                               <div className="rating">
@@ -939,9 +939,9 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-8.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-8.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Water Hose 40cm</a>
+                            <div className="product-card__name">   Water Hose 40cm   
                             </div>
                             <div className="product-card__rating">
                               <div className="rating">
@@ -1058,9 +1058,9 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-9.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-9.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Spanner Wrench</a>
+                            <div className="product-card__name">   Spanner Wrench   
                             </div>
                             <div className="product-card__rating">
                               <div className="rating">
@@ -1175,9 +1175,9 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-10.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-10.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Water Tap</a></div>
+                            <div className="product-card__name">   Water Tap   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -1293,9 +1293,9 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-11.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-11.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Hand Tool Kit</a>
+                            <div className="product-card__name">   Hand Tool Kit   
                             </div>
                             <div className="product-card__rating">
                               <div className="rating">
@@ -1410,10 +1410,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-12.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-12.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Ash's Chainsaw
-                                3.5kW</a></div>
+                            <div className="product-card__name">   Ash's Chainsaw
+                                3.5kW   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -1529,10 +1529,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-13.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-13.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Angle Grinder
-                                KZX3890PQW</a></div>
+                            <div className="product-card__name">   Brandix Angle Grinder
+                                KZX3890PQW   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -1646,10 +1646,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-14.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-14.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Air
-                                Compressor DELTAKX500</a></div>
+                            <div className="product-card__name">   Brandix Air
+                                Compressor DELTAKX500   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -1765,10 +1765,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-15.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-15.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Electric
-                                Jigsaw JIG7000BQ</a></div>
+                            <div className="product-card__name">   Brandix Electric
+                                Jigsaw JIG7000BQ   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -1882,10 +1882,10 @@ jkljfklasjfkljasdf
                         <div className="product-card"><button className="product-card__quickview" type="button"><svg width="16px" height="16px">
                               <use xlinkHref="images/sprite.svg#quickview-16" />
                             </svg> <span className="fake-svg-icon" /></button>
-                          <div className="product-card__image"><a href="product.html"><img src="images/products/product-16.jpg" alt="true" /></a></div>
+                          <div className="product-card__image">   <img src="images/products/product-16.jpg" alt="true" />   </div>
                           <div className="product-card__info">
-                            <div className="product-card__name"><a href="product.html">Brandix Screwdriver
-                                SCREW1500ACC</a></div>
+                            <div className="product-card__name">   Brandix Screwdriver
+                                SCREW1500ACC   </div>
                             <div className="product-card__rating">
                               <div className="rating">
                                 <div className="rating__body"><svg className="rating__star rating__star--active" width="13px" height="12px">
@@ -2008,7 +2008,7 @@ jkljfklasjfkljasdf
                   <div className="block-banner__title">Hundreds<br className="block-banner__mobile-br" />Hand Tools</div>
                   <div className="block-banner__text">Hammers, Chisels, Universal Pliers, Nippers, Jigsaws, Saws</div>
                   <div className="block-banner__button"><span className="btn btn-sm btn-primary">Shop Now</span></div>
-                </a></div>
+                  </a> </div>
             </div>{/* .block-banner / end */}
    
      

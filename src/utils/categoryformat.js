@@ -49,7 +49,7 @@ function categoryFormat(res){
          result.push(tempo)
 
        }
-       console.log(result);
+      //  console.log(result);
        
        return result
 }
